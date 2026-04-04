@@ -1,4 +1,4 @@
-package si.uni_lj.fe.tnuv.activitylifecycledemo;
+package si.uni_lj.fe.tnuv.slovenskismeh;
 
 import org.junit.Test;
 

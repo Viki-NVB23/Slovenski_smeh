@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="white">#FFFFFF</color>
-    <color name="black">#000000</color>
 
-    <color name="light_blue">#A8DFF4</color>
-    <color name="light_green">#D3E992</color>
-    <color name="light_red">#FFAFAF</color>
-    <color name="light_yellow">#FFECC0</color>
+    <!-- glavne barve -->
+    <color name="orange_main">#FFFF8C00</color>
+    <color name="background_dark">#FF191022</color>
 
-    <color name="dark_blue">#0099CC</color>
-    <color name="dark_green">#669900</color>
-    <color name="dark_red">#CC0000</color>
-    <color name="dark_yellow">#FF8A00</color>
-    <color name="colorAccent">#FF8A00</color>
-    <color name="colorPrimaryDark">#FF8A00</color>
-    <color name="colorPrimary">#FF8A00</color>
+    <!-- dodatne -->
+    <color name="orange_light_5">#0DFF8C00</color>
+    <color name="orange_light_10">#1AFF8C00</color>
+
+    <color name="slate_500">#FF64748B</color>
+    <color name="slate_400">#FF94A3B8</color>
+    <color name="slate_50">#FFF1F5F9</color>
+
 </resources>

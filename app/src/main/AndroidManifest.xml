@@ -10,10 +10,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ActivityLifecycleDemo"
+        android:theme="@style/Theme.SlovenskiSmeh"
         tools:targetApi="31">
 
-        <activity android:name="si.uni_lj.fe.tnuv.activitylifecycledemo.ActivityA"
+        <activity android:name="si.uni_lj.fe.tnuv.slovenskismeh.MainActivity"
             android:launchMode="singleTask"
             android:exported="true">
             <intent-filter>
@@ -22,13 +22,25 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="si.uni_lj.fe.tnuv.activitylifecycledemo.ActivityB" />
+        <activity
+            android:name="si.uni_lj.fe.tnuv.slovenskismeh.ComedianProfileActivity"
+            android:exported="false" />
 
-        <activity android:name="si.uni_lj.fe.tnuv.activitylifecycledemo.ActivityC" />
 
-        <activity android:name="si.uni_lj.fe.tnuv.activitylifecycledemo.DialogActivity"
-            android:theme="@android:style/Theme.Dialog">
-        </activity>
+        <activity android:name="si.uni_lj.fe.tnuv.slovenskismeh.MapActivity" />
+
+        <activity
+            android:name="si.uni_lj.fe.tnuv.slovenskismeh.EmptyViewsActivity"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name="si.uni_lj.fe.tnuv.slovenskismeh.EventDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="si.uni_lj.fe.tnuv.slovenskismeh.EventsActivity"
+            android:exported="false" />
+
 
     </application>
 

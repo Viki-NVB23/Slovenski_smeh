@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "si.uni_lj.fe.tnuv.activitylifecycledemo"
+    namespace = "si.uni_lj.fe.tnuv.slovenskismeh"
     compileSdk = 35
 
     defaultConfig {

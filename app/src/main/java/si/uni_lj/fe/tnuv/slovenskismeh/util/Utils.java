@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package si.uni_lj.fe.tnuv.activitylifecycledemo.util;
+package si.uni_lj.fe.tnuv.slovenskismeh.util;
 
 import android.os.Handler;
 import android.widget.TextView;
