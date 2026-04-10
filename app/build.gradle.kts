@@ -7,7 +7,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "si.uni_lj.fe.tnuv.activitylifecycledemo"
+        applicationId ="si.uni_lj.fe.tnuv.slovenskismeh"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -43,4 +43,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
 }

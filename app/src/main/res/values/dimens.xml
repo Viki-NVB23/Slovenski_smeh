@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_17">17dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_28">28dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_34">34dp</dimen>
+    <dimen name="dp_48">48dp</dimen>
+    <dimen name="dp_55">55dp</dimen>
+    <dimen name="dp_70">70dp</dimen>
+    <dimen name="dp_84">84dp</dimen>
+    <dimen name="dp_95">95dp</dimen>
+    <dimen name="dp_103">103dp</dimen>
+    <dimen name="dp_137">137dp</dimen>
+    <dimen name="dp_145">145dp</dimen>
+    <dimen name="dp_169">169dp</dimen>
+    <dimen name="dp_171">171dp</dimen>
+    <dimen name="dp_255">255dp</dimen>
+    <dimen name="dp_294">294dp</dimen>
+    <dimen name="dp_358">358dp</dimen>
+    <dimen name="dp_390">390dp</dimen>
+    <dimen name="dp_526">526dp</dimen>
+    <dimen name="dp_570">570dp</dimen>
+    <dimen name="dp_810">810dp</dimen>
+</resources>
