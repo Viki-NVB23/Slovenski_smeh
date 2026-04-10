@@ -1,6 +1,628 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FF191022">
+
+    <!-- Frame: Podrobnosti dogodka - Slovenski smeh (390x1373) -->
+
+    <!-- FRAME: Fixed Bottom Action -->
+    <LinearLayout
+        android:id="@+id/fixed_bottom_action"
+        android:orientation="vertical"
+        android:layout_width="390dp"
+        android:layout_height="65dp"
+        android:background="#CC191022"
+        android:paddingLeft="0dp"
+        android:paddingTop="12dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="12dp">
+
+        <!-- FRAME: Container -->
+        <LinearLayout
+            android:id="@+id/container"
+            android:orientation="horizontal"
+            android:layout_width="390dp"
+            android:layout_height="40dp"
+            android:paddingLeft="41.40999984741211dp"
+            android:paddingTop="0dp"
+            android:paddingRight="41.43000030517578dp"
+            android:paddingBottom="0dp">
+
+            <!-- FRAME: Link -->
+            <LinearLayout
+                android:id="@+id/link"
+                android:orientation="vertical"
+                android:layout_width="39dp"
+                android:layout_height="38dp">
+
+                <!-- FRAME: Container -->
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:orientation="vertical"
+                    android:layout_width="16dp"
+                    android:layout_height="18dp">
+
+                    <!-- VECTOR: Icon -->
+                    <ImageView
+                        android:id="@+id/icon"
+                        android:src="@drawable/ic_icon"
+                        android:scaleType="fitXY"
+                        android:layout_width="16dp"
+                        android:layout_height="18dp" />
+                </LinearLayout>
+
+                <!-- FRAME: Container -->
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:orientation="vertical"
+                    android:layout_width="39dp"
+                    android:layout_height="16dp">
+
+                    <!-- TEXT: Text -->
+                    <TextView
+                        android:id="@+id/text"
+                        android:text="Domov"
+                        android:textSize="12sp"
+                        android:textColor="#FFFF8C00"
+                        android:gravity="start"
+                        android:fontFamily="Space Grotesk"
+                        android:layout_width="39dp"
+                        android:layout_height="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- FRAME: Link -->
+            <LinearLayout
+                android:id="@+id/link"
+                android:orientation="vertical"
+                android:layout_width="54dp"
+                android:layout_height="38dp">
+
+                <!-- FRAME: Container -->
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:orientation="vertical"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp">
+
+                    <!-- VECTOR: Icon -->
+                    <ImageView
+                        android:id="@+id/icon"
+                        android:src="@drawable/ic_icon"
+                        android:scaleType="fitXY"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp" />
+                </LinearLayout>
+
+                <!-- FRAME: Container -->
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:orientation="vertical"
+                    android:layout_width="54dp"
+                    android:layout_height="16dp">
+
+                    <!-- TEXT: Text -->
+                    <TextView
+                        android:id="@+id/text"
+                        android:text="Zemljevid"
+                        android:textSize="12sp"
+                        android:textColor="#FF94A3B8"
+                        android:gravity="start"
+                        android:fontFamily="Space Grotesk"
+                        android:layout_width="54dp"
+                        android:layout_height="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- FRAME: Link -->
+            <LinearLayout
+                android:id="@+id/link"
+                android:orientation="vertical"
+                android:layout_width="48dp"
+                android:layout_height="40dp">
+
+                <!-- FRAME: Container -->
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:orientation="vertical"
+                    android:layout_width="18dp"
+                    android:layout_height="20dp">
+
+                    <!-- VECTOR: Icon -->
+                    <ImageView
+                        android:id="@+id/icon"
+                        android:src="@drawable/ic_icon"
+                        android:scaleType="fitXY"
+                        android:layout_width="18dp"
+                        android:layout_height="20dp" />
+                </LinearLayout>
+
+                <!-- FRAME: Container -->
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:orientation="vertical"
+                    android:layout_width="48dp"
+                    android:layout_height="16dp">
+
+                    <!-- TEXT: Text -->
+                    <TextView
+                        android:id="@+id/text"
+                        android:text="Dogodki"
+                        android:textSize="12sp"
+                        android:textColor="#FF94A3B8"
+                        android:gravity="start"
+                        android:fontFamily="Space Grotesk"
+                        android:layout_width="48dp"
+                        android:layout_height="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- FRAME: Top Navigation -->
+    <LinearLayout
+        android:id="@+id/top_navigation"
+        android:orientation="horizontal"
+        android:layout_width="390dp"
+        android:layout_height="73dp"
+        android:background="#FF191022"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp">
+
+        <!-- FRAME: Container -->
+        <LinearLayout
+            android:id="@+id/container"
+            android:orientation="horizontal"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+
+            <!-- FRAME: Container -->
+            <LinearLayout
+                android:id="@+id/container"
+                android:orientation="vertical"
+                android:layout_width="16dp"
+                android:layout_height="16dp">
+
+                <!-- VECTOR: Icon -->
+                <ImageView
+                    android:id="@+id/icon"
+                    android:src="@drawable/ic_icon"
+                    android:scaleType="fitXY"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- FRAME: Heading 2 -->
+        <LinearLayout
+            android:id="@+id/heading_2"
+            android:orientation="vertical"
+            android:layout_width="262dp"
+            android:layout_height="23dp">
+
+            <!-- TEXT: Dogodek -->
+            <TextView
+                android:id="@+id/dogodek"
+                android:text="Dogodek"
+                android:textSize="18sp"
+                android:textColor="#FFF1F5F9"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="Space Grotesk"
+                android:layout_width="129dp"
+                android:layout_height="23dp" />
+        </LinearLayout>
+
+        <!-- FRAME: Container -->
+        <LinearLayout
+            android:id="@+id/container"
+            android:orientation="horizontal"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+
+            <!-- FRAME: Button -->
+            <LinearLayout
+                android:id="@+id/button"
+                android:orientation="horizontal"
+                android:layout_width="18dp"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_rounded">
+
+                <!-- FRAME: Container -->
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:orientation="vertical"
+                    android:layout_width="18dp"
+                    android:layout_height="20dp">
+
+                    <!-- VECTOR: Icon -->
+                    <ImageView
+                        android:id="@+id/icon"
+                        android:src="@drawable/ic_icon"
+                        android:scaleType="fitXY"
+                        android:layout_width="18dp"
+                        android:layout_height="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- FRAME: Main -->
+    <LinearLayout
+        android:id="@+id/main"
+        android:orientation="vertical"
+        android:layout_width="390dp"
+        android:layout_height="1300dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="128dp">
+
+        <!-- FRAME: Hero Image -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/hero_image"
+            android:layout_width="390dp"
+            android:layout_height="494dp"
+            android:background="#33FF8C00">
+
+            <!-- RECTANGLE: Gradient -->
+            <LinearLayout
+                android:id="@+id/gradient"
+                android:layout_width="390dp"
+                android:layout_height="494dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- FRAME: Event Title -->
+        <LinearLayout
+            android:id="@+id/event_title"
+            android:orientation="vertical"
+            android:layout_width="390dp"
+            android:layout_height="129dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="32dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp">
+
+            <!-- FRAME: Overlay -->
+            <LinearLayout
+                android:id="@+id/overlay"
+                android:orientation="horizontal"
+                android:layout_width="153dp"
+                android:layout_height="24dp"
+                android:background="@drawable/bg_rounded"
+                android:paddingLeft="12dp"
+                android:paddingTop="4dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="4dp">
+
+                <!-- TEXT: Text -->
+                <TextView
+                    android:id="@+id/text"
+                    android:text="Stand-up Komedija"
+                    android:textSize="12sp"
+                    android:textColor="#FFFF8C00"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:fontFamily="Space Grotesk"
+                    android:layout_width="129dp"
+                    android:layout_height="16dp" />
+            </LinearLayout>
+
+            <!-- FRAME: Heading 1 -->
+            <LinearLayout
+                android:id="@+id/heading_1"
+                android:orientation="vertical"
+                android:layout_width="358dp"
+                android:layout_height="45dp">
+
+                <!-- TEXT: Vid Valič: Stradanje -->
+                <TextView
+                    android:id="@+id/vid_vali___stradanje"
+                    android:text="Vid Valič: Stradanje"
+                    android:textSize="36sp"
+                    android:textColor="#FFF1F5F9"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:fontFamily="Space Grotesk"
+                    android:layout_width="358dp"
+                    android:layout_height="45dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- FRAME: Event Info Grid -->
+        <LinearLayout
+            android:id="@+id/event_info_grid"
+            android:orientation="vertical"
+            android:layout_width="390dp"
+            android:layout_height="158dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="0dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="0dp">
+
+            <!-- FRAME: Date & Time -->
+            <LinearLayout
+                android:id="@+id/date___time"
+                android:orientation="horizontal"
+                android:layout_width="374dp"
+                android:layout_height="72dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="12dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="12dp">
+
+                <!-- FRAME: Overlay -->
+                <LinearLayout
+                    android:id="@+id/overlay"
+                    android:orientation="horizontal"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_rounded">
+
+                    <!-- FRAME: Container -->
+                    <LinearLayout
+                        android:id="@+id/container"
+                        android:orientation="vertical"
+                        android:layout_width="18dp"
+                        android:layout_height="20dp">
+
+                        <!-- VECTOR: Icon -->
+                        <ImageView
+                            android:id="@+id/icon"
+                            android:src="@drawable/ic_icon"
+                            android:scaleType="fitXY"
+                            android:layout_width="18dp"
+                            android:layout_height="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- FRAME: Container -->
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:orientation="vertical"
+                    android:layout_width="201dp"
+                    android:layout_height="45dp">
+
+                    <!-- FRAME: Container -->
+                    <LinearLayout
+                        android:id="@+id/container"
+                        android:orientation="vertical"
+                        android:layout_width="201dp"
+                        android:layout_height="24dp">
+
+                        <!-- TEXT: Text -->
+                        <TextView
+                            android:id="@+id/text"
+                            android:text="Petek, 20. oktober • 20:00"
+                            android:textSize="16sp"
+                            android:textColor="#FFF1F5F9"
+                            android:gravity="start"
+                            android:textStyle="bold"
+                            android:fontFamily="Space Grotesk"
+                            android:layout_width="201dp"
+                            android:layout_height="24dp" />
+                    </LinearLayout>
+
+                    <!-- FRAME: Container -->
+                    <LinearLayout
+                        android:id="@+id/container"
+                        android:orientation="vertical"
+                        android:layout_width="201dp"
+                        android:layout_height="21dp">
+
+                        <!-- TEXT: Text -->
+                        <TextView
+                            android:id="@+id/text"
+                            android:text="Vrata se odprejo ob 19:30"
+                            android:textSize="14sp"
+                            android:textColor="#FF94A3B8"
+                            android:gravity="start"
+                            android:fontFamily="Space Grotesk"
+                            android:layout_width="171dp"
+                            android:layout_height="21dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- FRAME: Venue & Location -->
+            <LinearLayout
+                android:id="@+id/venue___location"
+                android:orientation="horizontal"
+                android:layout_width="374dp"
+                android:layout_height="82dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp">
+
+                <!-- FRAME: Overlay -->
+                <LinearLayout
+                    android:id="@+id/overlay"
+                    android:orientation="horizontal"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_rounded">
+
+                    <!-- FRAME: Container -->
+                    <LinearLayout
+                        android:id="@+id/container"
+                        android:orientation="vertical"
+                        android:layout_width="16dp"
+                        android:layout_height="20dp">
+
+                        <!-- VECTOR: Icon -->
+                        <ImageView
+                            android:id="@+id/icon"
+                            android:src="@drawable/ic_icon"
+                            android:scaleType="fitXY"
+                            android:layout_width="16dp"
+                            android:layout_height="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- FRAME: Container -->
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:orientation="vertical"
+                    android:layout_width="214dp"
+                    android:layout_height="66dp">
+
+                    <!-- FRAME: Container -->
+                    <LinearLayout
+                        android:id="@+id/container"
+                        android:orientation="vertical"
+                        android:layout_width="214dp"
+                        android:layout_height="24dp">
+
+                        <!-- TEXT: Text -->
+                        <TextView
+                            android:id="@+id/text"
+                            android:text="Kino Šiška"
+                            android:textSize="16sp"
+                            android:textColor="#FFF1F5F9"
+                            android:gravity="start"
+                            android:textStyle="bold"
+                            android:fontFamily="Space Grotesk"
+                            android:layout_width="78dp"
+                            android:layout_height="24dp" />
+                    </LinearLayout>
+
+                    <!-- FRAME: Container -->
+                    <LinearLayout
+                        android:id="@+id/container"
+                        android:orientation="vertical"
+                        android:layout_width="214dp"
+                        android:layout_height="42dp">
+
+                        <!-- TEXT: Text -->
+                        <TextView
+                            android:id="@+id/text"
+                            android:text="Trg prekomorskih brigad 3, 1000
+Ljubljana"
+                            android:textSize="14sp"
+                            android:textColor="#FF94A3B8"
+                            android:gravity="start"
+                            android:fontFamily="Space Grotesk"
+                            android:layout_width="214dp"
+                            android:layout_height="42dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- FRAME: Description -->
+        <LinearLayout
+            android:id="@+id/description"
+            android:orientation="vertical"
+            android:layout_width="390dp"
+            android:layout_height="231dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="40dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="24dp">
+
+            <!-- FRAME: Heading 3 -->
+            <LinearLayout
+                android:id="@+id/heading_3"
+                android:orientation="vertical"
+                android:layout_width="358dp"
+                android:layout_height="28dp">
+
+                <!-- TEXT: O dogodku -->
+                <TextView
+                    android:id="@+id/o_dogodku"
+                    android:text="O dogodku"
+                    android:textSize="18sp"
+                    android:textColor="#FFF1F5F9"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:fontFamily="Space Grotesk"
+                    android:layout_width="358dp"
+                    android:layout_height="28dp" />
+            </LinearLayout>
+
+            <!-- FRAME: Container -->
+            <LinearLayout
+                android:id="@+id/container"
+                android:orientation="vertical"
+                android:layout_width="358dp"
+                android:layout_height="130dp">
+
+                <!-- TEXT: Pridružite se Vidu Valiču v njegovi najnovejši stand-up uspešnici 'Stradanje'. Svež material, oster humor in nepozaben večer smeha v osrčju Ljubljane. Ne zamudite enega najbolj priljubljenih slovenskih komikov v živo. -->
+                <TextView
+                    android:id="@+id/pridru_ite_se_vidu_vali_u_v_njegovi_najnovej_i_stand_up_uspe_nici__stradanje___sve__material__oster_humor_in_nepozaben_ve_er_smeha_v_osr_ju_ljubljane__ne_zamudite_enega_najbolj_priljubljenih_slovenskih_komikov_v__ivo_"
+                    android:text="Pridružite se Vidu Valiču v njegovi najnovejši
+stand-up uspešnici 'Stradanje'. Svež material,
+oster humor in nepozaben večer smeha v
+osrčju Ljubljane. Ne zamudite enega najbolj
+priljubljenih slovenskih komikov v živo."
+                    android:textSize="16sp"
+                    android:textColor="#FFCBD5E1"
+                    android:gravity="start"
+                    android:fontFamily="Space Grotesk"
+                    android:layout_width="358dp"
+                    android:layout_height="130dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- FRAME: Map Placeholder -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/map_placeholder"
+            android:layout_width="358dp"
+            android:layout_height="160dp"
+            android:background="@drawable/bg_rounded">
+
+            <!-- FRAME: Overlay -->
+            <LinearLayout
+                android:id="@+id/overlay"
+                android:orientation="horizontal"
+                android:layout_width="356dp"
+                android:layout_height="158dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="#33191022">
+
+                <!-- FRAME: Background -->
+                <LinearLayout
+                    android:id="@+id/background"
+                    android:orientation="vertical"
+                    android:layout_width="32dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/bg_rounded"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp">
+
+                    <!-- RECTANGLE: Overlay+Shadow -->
+                    <LinearLayout
+                        android:id="@+id/overlay_shadow"
+                        android:layout_width="32dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/bg_rounded" />
+
+                    <!-- VECTOR: Icon -->
+                    <ImageView
+                        android:id="@+id/icon"
+                        android:src="@drawable/ic_icon"
+                        android:scaleType="fitXY"
+                        android:layout_width="16dp"
+                        android:layout_height="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

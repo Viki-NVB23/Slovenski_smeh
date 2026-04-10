@@ -29,25 +29,10 @@ public class MainActivity extends AppCompatActivity {
         navMap = findViewById(R.id.nav_map);
         navEvents = findViewById(R.id.nav_events);
 
-        comedian1.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, ComedianProfileActivity.class);
-            startActivity(intent);
-        });
-
-        comedian2.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, ComedianProfileActivity.class);
-            startActivity(intent);
-        });
-
-        comedian3.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, ComedianProfileActivity.class);
-            startActivity(intent);
-        });
-
-        comedian4.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, ComedianProfileActivity.class);
-            startActivity(intent);
-        });
+        comedian1.setOnClickListener(v -> openProfile("Vid Valič"));
+        comedian2.setOnClickListener(v -> openProfile("Martina Ipša"));
+        comedian3.setOnClickListener(v -> openProfile("Tilen Artač"));
+        comedian4.setOnClickListener(v -> openProfile("Lucija Ćirović"));
 
         navMap.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, MapActivity.class);
@@ -59,4 +44,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
     }
+
+    private void openProfile(String comedianName) {
+        Intent intent = new Intent(MainActivity.this, ComedianProfileActivity.class);
+        intent.putExtra("comedian_name", comedianName);
+        startActivity(intent);
+    }
+
 }
