@@ -1,0 +1,140 @@
+[
+  {
+    "name": "Perica",
+    "surname": "Jerković",
+    "imageUrl": "https://www.pericajerkovic.si/wp-content/uploads/2023/11/perica-jerkovic-profile.jpg",
+    "quote": "Stand-up comedy is like a bad haircut: you regret it immediately, but you have to live with it for months."
+  },
+  {
+    "name": "Tin",
+    "surname": "Vodopivec",
+    "imageUrl": "https://tinvodopivec.com/wp-content/uploads/2023/10/tin-vodopivec.jpg",
+    "quote": "Humor is the spice of life, but too much and you'll choke on your own jokes."
+  },
+  {
+    "name": "Martina",
+    "surname": "Ipša",
+    "imageUrl": "https://martinaipsa.com/wp-content/uploads/2023/11/martina-ipsa-profile.jpg",
+    "quote": "Why did the comedian go to therapy? Because his jokes were killing him!"
+  },
+  {
+    "name": "Vid",
+    "surname": "Valič",
+    "imageUrl": "https://vidvalic.si/wp-content/uploads/2023/11/vid-valic.jpg",
+    "quote": "Stand-up is like dating: you bomb, you learn, you try again, and sometimes you get applause."
+  },
+  {
+    "name": "Uroš",
+    "surname": "Kuzman",
+    "imageUrl": "https://uroskuzman.si/wp-content/uploads/2023/11/uros-kuzman-profile.jpg",
+    "quote": "Humor is subjective, but bad jokes are universally hated."
+  },
+  {
+    "name": "Boštjan",
+    "surname": "Gorenc – Pižama",
+    "imageUrl": "https://pizama.net/wp-content/uploads/2023/11/bostjan-gorenc-pizama.jpg",
+    "quote": "If laughter is the best medicine, I'm prescribing myself a lifetime supply."
+  },
+  {
+    "name": "Andrej",
+    "surname": "Težak – Tešky",
+    "imageUrl": "https://tesky.com/wp-content/uploads/2023/11/andrej-tezak.jpg",
+    "quote": "Stand-up comedy: where every punchline is a risk, and every laugh is a victory."
+  },
+  {
+    "name": "Sašo",
+    "surname": "Stare",
+    "imageUrl": "https://sasostare.si/wp-content/uploads/2023/11/saso-stare.jpg",
+    "quote": "Why don't comedians play hide and seek? Because good luck hiding when you're always the punchline."
+  },
+  {
+    "name": "Gašper",
+    "surname": "Bergant",
+    "imageUrl": "https://gasperbergant.com/wp-content/uploads/2023/11/gasper-bergant-profile.jpg",
+    "quote": "Humor is like a boomerang: if it's good, it comes back to you."
+  },
+  {
+    "name": "Tadej",
+    "surname": "Toš",
+    "imageUrl": "https://tadejtos.si/wp-content/uploads/2023/11/tadej-tos.jpg",
+    "quote": "Stand-up is my cardio: I run my mouth and hope for laughs."
+  },
+  {
+    "name": "Admir",
+    "surname": "Baltić",
+    "imageUrl": "https://admirbaltic.com/wp-content/uploads/2023/11/admir-baltic.jpg",
+    "quote": "If you can't laugh at yourself, call me – I'll do it for you."
+  },
+  {
+    "name": "Ranko",
+    "surname": "Babić",
+    "imageUrl": "https://rankobabic.si/wp-content/uploads/2023/11/ranko-babic-profile.jpg",
+    "quote": "Comedy is tragedy plus time, but stand-up is tragedy plus timing."
+  },
+  {
+    "name": "Klemen",
+    "surname": "Bučan",
+    "imageUrl": "https://klemenbucan.si/wp-content/uploads/2023/11/klemen-bucan.jpg",
+    "quote": "Why did the joke go to school? To improve its punchline!"
+  },
+  {
+    "name": "Aleš",
+    "surname": "Novak",
+    "imageUrl": "https://alesnovak.si/wp-content/uploads/2023/11/ales-novak-profile.jpg",
+    "quote": "Humor is the universal language, but my jokes are still learning English."
+  },
+  {
+    "name": "Rok",
+    "surname": "Škrlep",
+    "imageUrl": "https://rokskrlep.si/wp-content/uploads/2023/11/rok-skrlep.jpg",
+    "quote": "Stand-up comedy: because therapy is expensive, and this way I get paid."
+  },
+  {
+    "name": "Žan",
+    "surname": "Papič",
+    "imageUrl": "https://zanpapic.si/wp-content/uploads/2023/11/zan-papic-profile.jpg",
+    "quote": "Laughter is contagious, but my jokes are vaccinated against silence."
+  },
+  {
+    "name": "David",
+    "surname": "Gorinšek",
+    "imageUrl": "https://davidgorinsek.si/wp-content/uploads/2023/11/david-gorinsek.jpg",
+    "quote": "Why be serious when you can be hilariously wrong?"
+  },
+  {
+    "name": "Lucija",
+    "surname": "Ćirović",
+    "imageUrl": "https://lucijacirovic.com/wp-content/uploads/2023/11/lucija-cirovic-profile.jpg",
+    "quote": "Humor is my superpower, and puns are my kryptonite."
+  },
+  {
+    "name": "Jan",
+    "surname": "Kreuzer",
+    "imageUrl": "https://jankreuzer.com/wp-content/uploads/2023/11/jan-kreuzer.jpg",
+    "quote": "Stand-up is like a rollercoaster: thrilling, terrifying, and sometimes you throw up."
+  },
+  {
+    "name": "Nejc",
+    "surname": "Petek",
+    "imageUrl": "https://scontent-ams4-1.cdninstagram.com/v/t51.2885-19/s320x320/12345678_123456789012345_1234567890_n.jpg?_nc_ht=scontent-ams4-1.cdninstagram.com&_nc_cat=1&_nc_ohc=abc123&_nc_oc=AQabc123&_nc_tp=1",
+    "quote": "If life gives you lemons, make lemonade. If it gives you jokes, make comedy gold."
+  },
+  {
+    "name": "Nejc",
+    "surname": "Šmit",
+    "imageUrl": "https://scontent-ams4-1.cdninstagram.com/v/t51.2885-19/s320x320/87654321_876543210987654_8765432109_n.jpg?_nc_ht=scontent-ams4-1.cdninstagram.com&_nc_cat=1&_nc_ohc=def456&_nc_oc=AQdef456&_nc_tp=1",
+    "quote": "Humor is the art of making people laugh without hurting feelings – too much."
+  },
+  {
+    "name": "Eva",
+    "surname": "Virc",
+    "imageUrl": "https://scontent-ams4-1.cdninstagram.com/v/t51.2885-19/s320x320/11223344_112233445566778_1122334455_n.jpg?_nc_ht=scontent-ams4-1.cdninstagram.com&_nc_cat=1&_nc_ohc=ghi789&_nc_oc=AQghi789&_nc_tp=1",
+    "quote": "Why did the comedian break up with the calendar? Too many dates!"
+  },
+  {
+    "name": "Tilen",
+    "surname": "Artač",
+    "imageUrl": "https://tilenartac.si/wp-content/uploads/2023/11/tilen-artac-profile.jpg",
+    "quote": "Why did the comedian break up with the calendar? Too many dates!"
+  }
+]

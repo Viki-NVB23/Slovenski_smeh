@@ -178,16 +178,19 @@
                     android:id="@+id/icon_search"
                     android:layout_width="18dp"
                     android:layout_height="18dp"
-                    android:src="@drawable/ic_icon" />
+                    android:src="@drawable/ic_search" />
 
-                <TextView
-                    android:id="@+id/txt_search_placeholder"
-                    android:layout_width="wrap_content"
+                <EditText
+                    android:id="@+id/edit_search"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:layout_marginStart="12dp"
-                    android:text="Išči komike..."
                     android:textSize="16sp"
-                    android:textColor="#64748B" />
+                    android:textColor="#64748B"
+                    android:background="@android:color/transparent"
+                    android:hint="Išči komike..."
+                    android:textColorHint="#64748B" />
             </LinearLayout>
 
             <!-- SECTION HEADER -->
@@ -210,200 +213,29 @@
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="#F1F5F9" />
-
-                <TextView
-                    android:id="@+id/btn_show_all"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Prikaži vse"
-                    android:textSize="14sp"
-                    android:textColor="#FF8C00" />
             </LinearLayout>
 
+            <!-- NO RESULTS MESSAGE -->
+            <TextView
+                android:id="@+id/txt_no_results"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Komik pod tem imenom ni bil najden"
+                android:textSize="16sp"
+                android:textColor="#F1F5F9"
+                android:visibility="gone" />
+
             <!-- GRID -->
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/comedians_grid"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/comedians_recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp">
-
-                <!-- Comedian 1 -->
-                <LinearLayout
-                    android:id="@+id/comedian_1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@drawable/bg_rounded"
-                    app:layout_constraintWidth_percent="0.48"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <View
-                        android:id="@+id/image_1"
-                        android:layout_width="match_parent"
-                        android:layout_height="169dp"
-                        android:background="#E7C3A5" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="12dp">
-
-                        <TextView
-                            android:id="@+id/txt_name_1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Vid Valič"
-                            android:textSize="16sp"
-                            android:textStyle="bold"
-                            android:textColor="#F1F5F9" />
-
-                        <TextView
-                            android:id="@+id/txt_quote_1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="&quot;Everything is a wedding.&quot;"
-                            android:textSize="12sp"
-                            android:textColor="#94A3B8" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <!-- Comedian 2 -->
-                <LinearLayout
-                    android:id="@+id/comedian_2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@drawable/bg_rounded"
-                    app:layout_constraintWidth_percent="0.48"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <View
-                        android:id="@+id/image_2"
-                        android:layout_width="match_parent"
-                        android:layout_height="169dp"
-                        android:background="#446B53" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="12dp">
-
-                        <TextView
-                            android:id="@+id/txt_name_2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Martina Ipša"
-                            android:textSize="16sp"
-                            android:textStyle="bold"
-                            android:textColor="#F1F5F9" />
-
-                        <TextView
-                            android:id="@+id/txt_quote_2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="&quot;Styrian soul, global jokes.&quot;"
-                            android:textSize="12sp"
-                            android:textColor="#94A3B8" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <!-- Comedian 3 -->
-                <LinearLayout
-                    android:id="@+id/comedian_3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:orientation="vertical"
-                    android:background="@drawable/bg_rounded"
-                    app:layout_constraintWidth_percent="0.48"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/comedian_1">
-
-                    <View
-                        android:id="@+id/image_3"
-                        android:layout_width="match_parent"
-                        android:layout_height="169dp"
-                        android:background="#D98A91" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="12dp">
-
-                        <TextView
-                            android:id="@+id/txt_name_3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Tilen Artač"
-                            android:textSize="16sp"
-                            android:textStyle="bold"
-                            android:textColor="#F1F5F9" />
-
-                        <TextView
-                            android:id="@+id/txt_quote_3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="&quot;The voice of a thousand people.&quot;"
-                            android:textSize="12sp"
-                            android:textColor="#94A3B8" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <!-- Comedian 4 -->
-                <LinearLayout
-                    android:id="@+id/comedian_4"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:orientation="vertical"
-                    android:background="@drawable/bg_rounded"
-                    app:layout_constraintWidth_percent="0.48"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/comedian_2">
-
-                    <View
-                        android:id="@+id/image_4"
-                        android:layout_width="match_parent"
-                        android:layout_height="169dp"
-                        android:background="#2A2A2A" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="12dp">
-
-                        <TextView
-                            android:id="@+id/txt_name_4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Lucija Ćirović"
-                            android:textSize="16sp"
-                            android:textStyle="bold"
-                            android:textColor="#F1F5F9" />
-
-                        <TextView
-                            android:id="@+id/txt_quote_4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="&quot;From puppets to punchlines.&quot;"
-                            android:textSize="12sp"
-                            android:textColor="#94A3B8" />
-                    </LinearLayout>
-                </LinearLayout>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                android:layout_marginEnd="16dp" />
 
         </LinearLayout>
     </ScrollView>
