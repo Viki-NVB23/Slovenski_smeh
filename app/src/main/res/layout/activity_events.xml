@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="#191022">
 
-    <!-- HEADER -->
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="0dp"
@@ -15,7 +14,6 @@
         android:gravity="center_vertical"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:background="#191022"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -45,7 +43,6 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <!-- BOTTOM NAV -->
     <LinearLayout
         android:id="@+id/bottom_navigation_bar"
         android:layout_width="0dp"
@@ -135,9 +132,7 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!-- MAIN -->
     <ScrollView
-        android:id="@+id/main_scroll"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintTop_toBottomOf="@id/header"
@@ -151,7 +146,6 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- SEARCH -->
             <LinearLayout
                 android:id="@+id/search_bar"
                 android:layout_width="match_parent"
@@ -180,9 +174,7 @@
                     android:textColor="#64748B" />
             </LinearLayout>
 
-            <!-- FILTERS -->
             <HorizontalScrollView
-                android:id="@+id/filter_scroll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -231,7 +223,6 @@
                 </LinearLayout>
             </HorizontalScrollView>
 
-            <!-- TITLE -->
             <TextView
                 android:id="@+id/txt_events_title"
                 android:layout_width="wrap_content"
@@ -251,7 +242,6 @@
                 android:textSize="16sp"
                 android:layout_marginTop="4dp" />
 
-            <!-- EVENT CARD 1 -->
             <LinearLayout
                 android:id="@+id/event_card_1"
                 android:layout_width="match_parent"
@@ -262,7 +252,6 @@
                 android:padding="12dp">
 
                 <View
-                    android:id="@+id/img_event_1"
                     android:layout_width="96dp"
                     android:layout_height="96dp"
                     android:background="#5D6B54" />
@@ -275,7 +264,6 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/txt_event_title_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Vid Valič: Stradanje"
@@ -284,7 +272,6 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/txt_event_time_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Fri, 15 Oct • 20:00"
@@ -293,28 +280,15 @@
                         android:layout_marginTop="8dp" />
 
                     <TextView
-                        android:id="@+id/txt_event_place_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Kino Šiška, Ljubljana"
                         android:textColor="#94A3B8"
                         android:textSize="14sp"
                         android:layout_marginTop="4dp" />
-
-                    <TextView
-                        android:id="@+id/btn_ticket_1"
-                        android:layout_width="match_parent"
-                        android:layout_height="44dp"
-                        android:layout_marginTop="12dp"
-                        android:gravity="center"
-                        android:text="Zagotovi si vstopnico"
-                        android:textColor="#FFFFFF"
-                        android:textStyle="bold"
-                        android:background="@drawable/bg_rounded" />
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- EVENT CARD 2 -->
             <LinearLayout
                 android:id="@+id/event_card_2"
                 android:layout_width="match_parent"
@@ -325,7 +299,6 @@
                 android:padding="12dp">
 
                 <View
-                    android:id="@+id/img_event_2"
                     android:layout_width="96dp"
                     android:layout_height="96dp"
                     android:background="#2C3D4F" />
@@ -338,7 +311,6 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/txt_event_title_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Open Mic: Fresh Blood"
@@ -347,7 +319,6 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/txt_event_time_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sun, 17 Oct • 19:30"
@@ -356,28 +327,15 @@
                         android:layout_marginTop="8dp" />
 
                     <TextView
-                        android:id="@+id/txt_event_place_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="10ka Club, Ljubljana"
                         android:textColor="#94A3B8"
                         android:textSize="14sp"
                         android:layout_marginTop="4dp" />
-
-                    <TextView
-                        android:id="@+id/btn_ticket_2"
-                        android:layout_width="match_parent"
-                        android:layout_height="44dp"
-                        android:layout_marginTop="12dp"
-                        android:gravity="center"
-                        android:text="Zagotovi si vstopnico"
-                        android:textColor="#FFFFFF"
-                        android:textStyle="bold"
-                        android:background="@drawable/bg_rounded" />
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- EVENT CARD 3 -->
             <LinearLayout
                 android:id="@+id/event_card_3"
                 android:layout_width="match_parent"
@@ -388,7 +346,6 @@
                 android:padding="12dp">
 
                 <View
-                    android:id="@+id/img_event_3"
                     android:layout_width="96dp"
                     android:layout_height="96dp"
                     android:background="#D8D2C8" />
@@ -401,7 +358,6 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/txt_event_title_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Roast: Public Figures"
@@ -410,7 +366,6 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/txt_event_time_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Wed, 20 Oct • 21:00"
@@ -419,28 +374,15 @@
                         android:layout_marginTop="8dp" />
 
                     <TextView
-                        android:id="@+id/txt_event_place_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="SNG Maribor"
                         android:textColor="#94A3B8"
                         android:textSize="14sp"
                         android:layout_marginTop="4dp" />
-
-                    <TextView
-                        android:id="@+id/btn_ticket_3"
-                        android:layout_width="match_parent"
-                        android:layout_height="44dp"
-                        android:layout_marginTop="12dp"
-                        android:gravity="center"
-                        android:text="Zagotovi si vstopnico"
-                        android:textColor="#FFFFFF"
-                        android:textStyle="bold"
-                        android:background="@drawable/bg_rounded" />
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- EVENT CARD 4 -->
             <LinearLayout
                 android:id="@+id/event_card_4"
                 android:layout_width="match_parent"
@@ -452,7 +394,6 @@
                 android:padding="12dp">
 
                 <View
-                    android:id="@+id/img_event_4"
                     android:layout_width="96dp"
                     android:layout_height="96dp"
                     android:background="#4D3427" />
@@ -465,7 +406,6 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/txt_event_title_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Tadej Toš v živo"
@@ -474,7 +414,6 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/txt_event_time_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sat, 23 Oct • 20:00"
@@ -483,24 +422,12 @@
                         android:layout_marginTop="8dp" />
 
                     <TextView
-                        android:id="@+id/txt_event_place_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Kulturni dom Celje"
                         android:textColor="#94A3B8"
                         android:textSize="14sp"
                         android:layout_marginTop="4dp" />
-
-                    <TextView
-                        android:id="@+id/btn_ticket_4"
-                        android:layout_width="match_parent"
-                        android:layout_height="44dp"
-                        android:layout_marginTop="12dp"
-                        android:gravity="center"
-                        android:text="Zagotovi si vstopnico"
-                        android:textColor="#FFFFFF"
-                        android:textStyle="bold"
-                        android:background="@drawable/bg_rounded" />
                 </LinearLayout>
             </LinearLayout>
 

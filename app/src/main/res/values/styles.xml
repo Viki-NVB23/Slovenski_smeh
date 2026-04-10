@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextStyle_16sp">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FF64748B</item>
+        <item name="android:fontFamily">Space Grotesk</item>
+    </style>
+    <style name="TextStyle_20sp">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFF1F5F9</item>
+        <item name="android:fontFamily">Space Grotesk</item>
+    </style>
+    <style name="TextStyle_14sp">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFF8C00</item>
+        <item name="android:fontFamily">Space Grotesk</item>
+    </style>
+    <style name="TextStyle_12sp">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FF94A3B8</item>
+        <item name="android:fontFamily">Space Grotesk</item>
+    </style>
+</resources>
