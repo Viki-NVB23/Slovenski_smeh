@@ -49,7 +49,8 @@
                 android:layout_height="wrap_content"
                 android:text="Biografija"
                 android:textColor="#FF8C00"
-                android:textSize="16sp"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 android:layout_marginTop="24dp" />
 
             <TextView
@@ -61,37 +62,42 @@
                 android:textSize="14sp"
                 android:layout_marginTop="8dp" />
 
-            <!-- TAGI -->
+            <!-- STYLE SECTION -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Slog"
                 android:textColor="#FF8C00"
-                android:textSize="16sp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:id="@+id/txt_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stand-up, Humor"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- MEDIA SECTION -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mediji in posnetki"
+                android:textColor="#FF8C00"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 android:layout_marginTop="24dp" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:id="@+id/layout_media_links"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:layout_marginTop="8dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Stand-up"
-                    android:textColor="#FFFFFF"
-                    android:background="@drawable/bg_rounded"
-                    android:padding="8dp"
-                    android:layout_marginEnd="8dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Humor"
-                    android:textColor="#FFFFFF"
-                    android:background="@drawable/bg_rounded"
-                    android:padding="8dp"/>
+                <!-- YouTube links will be added here dynamically -->
             </LinearLayout>
 
         </LinearLayout>

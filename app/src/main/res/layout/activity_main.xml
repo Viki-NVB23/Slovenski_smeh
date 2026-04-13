@@ -21,28 +21,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <LinearLayout
-            android:id="@+id/btn_menu"
-            android:layout_width="34dp"
-            android:layout_height="28dp"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:background="@drawable/bg_rounded"
-            android:padding="8dp">
-
-            <ImageView
-                android:id="@+id/img_menu"
-                android:layout_width="18dp"
-                android:layout_height="12dp"
-                android:src="@drawable/ic_icon"
-                android:scaleType="fitCenter" />
-        </LinearLayout>
-
         <TextView
             android:id="@+id/txt_header_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_weight="1"
             android:text="Slovenski smeh"
             android:textSize="20sp"
@@ -79,14 +61,15 @@
                 android:id="@+id/icon_home"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
-                android:src="@drawable/ic_icon" />
+                android:src="@drawable/ic_domov"
+                android:tint="#FF8C00" />
 
             <TextView
                 android:id="@+id/text_home"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Domov"
+                android:text="DOMOV"
                 android:textSize="10sp"
                 android:textStyle="bold"
                 android:textColor="#FF8C00" />
@@ -104,14 +87,15 @@
                 android:id="@+id/icon_map"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
-                android:src="@drawable/ic_icon" />
+                android:src="@drawable/ic_zemljevid"
+                android:tint="#94A3B8" />
 
             <TextView
                 android:id="@+id/text_map"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Zemljevid"
+                android:text="ZEMLJEVID"
                 android:textSize="10sp"
                 android:textColor="#94A3B8" />
         </LinearLayout>
@@ -128,14 +112,15 @@
                 android:id="@+id/icon_events"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
-                android:src="@drawable/ic_icon" />
+                android:src="@drawable/ic_dogodek"
+                android:tint="#94A3B8" />
 
             <TextView
                 android:id="@+id/text_events"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Dogodki"
+                android:text="DOGODKI"
                 android:textSize="10sp"
                 android:textColor="#94A3B8" />
         </LinearLayout>
@@ -178,7 +163,7 @@
                     android:id="@+id/icon_search"
                     android:layout_width="18dp"
                     android:layout_height="18dp"
-                    android:src="@drawable/ic_search" />
+                    android:src="@drawable/ic_loop" />
 
                 <EditText
                     android:id="@+id/edit_search"

@@ -6,6 +6,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -28,8 +29,15 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView comediansRecyclerView;
     private EditText editSearch;
     private TextView txtNoResults;
+    private LinearLayout navHome;
     private LinearLayout navMap;
     private LinearLayout navEvents;
+    private ImageView iconHome;
+    private ImageView iconMap;
+    private ImageView iconEvents;
+    private TextView textHome;
+    private TextView textMap;
+    private TextView textEvents;
 
     private List<Comedian> allComedians;
     private List<Comedian> filteredComedians;
@@ -43,12 +51,23 @@ public class MainActivity extends AppCompatActivity {
         comediansRecyclerView = findViewById(R.id.comedians_recycler_view);
         editSearch = findViewById(R.id.edit_search);
         txtNoResults = findViewById(R.id.txt_no_results);
+        navHome = findViewById(R.id.nav_home);
         navMap = findViewById(R.id.nav_map);
         navEvents = findViewById(R.id.nav_events);
+        iconHome = findViewById(R.id.icon_home);
+        iconMap = findViewById(R.id.icon_map);
+        iconEvents = findViewById(R.id.icon_events);
+        textHome = findViewById(R.id.text_home);
+        textMap = findViewById(R.id.text_map);
+        textEvents = findViewById(R.id.text_events);
 
         // Load comedians from JSON
         allComedians = loadComediansFromJson();
         filteredComedians = new ArrayList<>(allComedians);
+
+        // Set home navigation as active (orange)
+        iconHome.setColorFilter(getResources().getColor(android.R.color.holo_orange_dark), android.graphics.PorterDuff.Mode.SRC_IN);
+        textHome.setTextColor(getResources().getColor(android.R.color.holo_orange_dark));
 
         // Set up RecyclerView
         comediansRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));

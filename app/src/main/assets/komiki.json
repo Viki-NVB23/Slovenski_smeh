@@ -2,139 +2,208 @@
   {
     "name": "Perica",
     "surname": "Jerković",
-    "imageUrl": "https://www.pericajerkovic.si/wp-content/uploads/2023/11/perica-jerkovic-profile.jpg",
-    "quote": "Stand-up comedy is like a bad haircut: you regret it immediately, but you have to live with it for months."
+    "imageUrl": " ",
+    "quote": "Stand-up comedy is like a bad haircut: you regret it immediately, but you have to live with it for months.",
+    "biography": "Perica Jerković je eden najvplivnejših slovenskih stand‑up komikov, znan po inteligentni družbeni satiri in balkanskem humorju. S predstavami, kot sta Rojen v Jugi in Homo Selfiens, je postal prepoznaven glas generacije, ki združuje nostalgijo in sodobne teme.",
+    "style": "Družbena satira, opazovalni humor, osebne zgodbe.",
+    "youtubeLinks": []
   },
   {
     "name": "Tin",
     "surname": "Vodopivec",
-    "imageUrl": "https://tinvodopivec.com/wp-content/uploads/2023/10/tin-vodopivec.jpg",
-    "quote": "Humor is the spice of life, but too much and you'll choke on your own jokes."
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "Humor is the spice of life, but too much and you'll choke on your own jokes.",
+    "biography": "Tin Vodopivec je pionir sodobnega slovenskega stand‑upa in soustanovitelj festivala Panč. S toplim, pripovednim slogom je nastopal po številnih državah in postal eden najbolj mednarodno aktivnih slovenskih komikov.",
+    "style": "Pripovedni humor, vsakdanje situacije, čisti stand‑up.",
+    "youtubeLinks": []
   },
   {
     "name": "Martina",
     "surname": "Ipša",
-    "imageUrl": "https://martinaipsa.com/wp-content/uploads/2023/11/martina-ipsa-profile.jpg",
-    "quote": "Why did the comedian go to therapy? Because his jokes were killing him!"
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "Why did the comedian go to therapy? Because his jokes were killing him!",
+    "biography": "Martina Ipša je ena najmočnejših ženskih glasov v slovenski komediji, znana po iskrenem, neposrednem in družbeno kritičnem humorju. Njene teme pogosto izhajajo iz osebnih izkušenj, identitete in družbenih pričakovanj.",
+    "style": "Osebni humor, feministična perspektiva, družbena kritika.",
+    "youtubeLinks": []
   },
   {
     "name": "Vid",
     "surname": "Valič",
-    "imageUrl": "https://vidvalic.si/wp-content/uploads/2023/11/vid-valic.jpg",
-    "quote": "Stand-up is like dating: you bomb, you learn, you try again, and sometimes you get applause."
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "Stand-up is like dating: you bomb, you learn, you try again, and sometimes you get applause.",
+    "biography": "Vid Valič je eden najbolj prepoznavnih slovenskih komikov in TV‑voditeljev, znan po energičnem nastopu in improvizaciji. Sodeloval je v številnih oddajah in roastih, njegova komedija pa pogosto raziskuje odnose, družinske dinamike in balkanske posebnosti.",
+    "style": "Improvizacija, energičen nastop, provokativni humor.",
+    "youtubeLinks": []
   },
   {
     "name": "Uroš",
     "surname": "Kuzman",
-    "imageUrl": "https://uroskuzman.si/wp-content/uploads/2023/11/uros-kuzman-profile.jpg",
-    "quote": "Humor is subjective, but bad jokes are universally hated."
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "Humor is subjective, but bad jokes are universally hated.",
+    "biography": "Uroš Kuzman je doktor matematike in komik, ki je postal priljubljen s predstavami o šolskih spominih in družinskem življenju. Njegov inteligentni humor združuje znanstveno natančnost in toplo pripovednost.",
+    "style": "Inteligenten humor, šolske zgodbe, družinski humor.",
+    "youtubeLinks": []
   },
   {
     "name": "Boštjan",
     "surname": "Gorenc – Pižama",
-    "imageUrl": "https://pizama.net/wp-content/uploads/2023/11/bostjan-gorenc-pizama.jpg",
-    "quote": "If laughter is the best medicine, I'm prescribing myself a lifetime supply."
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "If laughter is the best medicine, I'm prescribing myself a lifetime supply.",
+    "biography": "Pižama je komik, pisatelj in prevajalec, znan po jezikovnem humorju in literarnih referencah. S projektom sLOLvenski klasiki je postal eden najbolj prepoznavnih ustvarjalcev na presečišču komedije in književnosti.",
+    "style": "Jezikovni humor, improvizacija, literarne parodije.",
+    "youtubeLinks": []
   },
   {
     "name": "Andrej",
     "surname": "Težak – Tešky",
-    "imageUrl": "https://tesky.com/wp-content/uploads/2023/11/andrej-tezak.jpg",
-    "quote": "Stand-up comedy: where every punchline is a risk, and every laugh is a victory."
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "Stand-up comedy: where every punchline is a risk, and every laugh is a victory.",
+    "biography": "Tešky je komik, producent in ustanovitelj festivala Panč, znan po osebnih zgodbah in družbeno kritičnem humorju. Njegov nastop je sproščen, avtentičen in pogosto povezan z njegovim aktivnim življenjskim slogom.",
+    "style": "Osebne zgodbe, družbena kritika, pripovedni humor.",
+    "youtubeLinks": []
   },
   {
     "name": "Sašo",
     "surname": "Stare",
-    "imageUrl": "https://sasostare.si/wp-content/uploads/2023/11/saso-stare.jpg",
-    "quote": "Why don't comedians play hide and seek? Because good luck hiding when you're always the punchline."
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "Why don't comedians play hide and seek? Because good luck hiding when you're always the punchline.",
+    "biography": "Sašo Stare je komik, improvizator in TV‑voditelj, znan po igrivem humorju in hitri improvizaciji. Sodeloval je v številnih oddajah in podcastih, kjer izstopa s toplim, dostopnim slogom.",
+    "style": "Improvizacija, pripovedni humor, lahkotna komedija.",
+    "youtubeLinks": []
   },
   {
     "name": "Gašper",
     "surname": "Bergant",
-    "imageUrl": "https://gasperbergant.com/wp-content/uploads/2023/11/gasper-bergant-profile.jpg",
-    "quote": "Humor is like a boomerang: if it's good, it comes back to you."
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "Humor is like a boomerang: if it's good, it comes back to you.",
+    "biography": "Gašper Bergant je eden najopaznejših mlajših komikov, znan po surovem humorju in neposrednosti. S podcastom Fejmiči je postal eden najbolj prepoznavnih glasov nove generacije.",
+    "style": "Surov humor, dialekt, družbena satira.",
+    "youtubeLinks": []
   },
   {
     "name": "Tadej",
     "surname": "Toš",
-    "imageUrl": "https://tadejtos.si/wp-content/uploads/2023/11/tadej-tos.jpg",
-    "quote": "Stand-up is my cardio: I run my mouth and hope for laughs."
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "Stand-up is my cardio: I run my mouth and hope for laughs.",
+    "biography": "Tadej Toš je igralec in komik, znan po filozofskem, ciničnem in družbeno kritičnem humorju. Njegove predstave pogosto združujejo gledališko prezenco in stand‑up dinamiko.",
+    "style": "Ciničen humor, družbena kritika, filozofski ton.",
+    "youtubeLinks": []
   },
   {
     "name": "Admir",
     "surname": "Baltić",
-    "imageUrl": "https://admirbaltic.com/wp-content/uploads/2023/11/admir-baltic.jpg",
-    "quote": "If you can't laugh at yourself, call me – I'll do it for you."
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "If you can't laugh at yourself, call me – I'll do it for you.",
+    "biography": "Admir Baltić je komik in igralec, znan po liku Žutega in monokomediji Slaba družba. Njegov humor temelji na balkanskih stereotipih, karakterih in pripovednih situacijah.",
+    "style": "Karakterni humor, balkanske teme, pripovedni slog.",
+    "youtubeLinks": []
   },
   {
     "name": "Ranko",
     "surname": "Babić",
-    "imageUrl": "https://rankobabic.si/wp-content/uploads/2023/11/ranko-babic-profile.jpg",
-    "quote": "Comedy is tragedy plus time, but stand-up is tragedy plus timing."
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "Comedy is tragedy plus time, but stand-up is tragedy plus timing.",
+    "biography": "Ranko Babić je komik in igralec, ki je zaslovel s predstavami o družinskem življenju, odnosih in balkanski mentaliteti. Njegov humor je topel, neposreden in zelo pripoveden.",
+    "style": "Družinski humor, balkanske teme, pripovedni slog.",
+    "youtubeLinks": []
   },
   {
     "name": "Klemen",
     "surname": "Bučan",
-    "imageUrl": "https://klemenbucan.si/wp-content/uploads/2023/11/klemen-bucan.jpg",
-    "quote": "Why did the joke go to school? To improve its punchline!"
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "Why did the joke go to school? To improve its punchline!",
+    "biography": "Klemen Bučan je komik, radijski glas in TV‑voditelj, znan po energičnem nastopu in imitacijah. Njegov humor je lahkoten, igriv in pogosto temelji na aktualnih situacijah.",
+    "style": "Imitacije, lahkotni humor, energičen nastop.",
+    "youtubeLinks": []
   },
   {
     "name": "Aleš",
     "surname": "Novak",
-    "imageUrl": "https://alesnovak.si/wp-content/uploads/2023/11/ales-novak-profile.jpg",
-    "quote": "Humor is the universal language, but my jokes are still learning English."
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "Humor is the universal language, but my jokes are still learning English.",
+    "biography": "Aleš Novak je komik, znan po hitrih enovrstičnicah, absurdnih situacijah in opazovalnem humorju. Sodeloval je v številnih projektih, ki združujejo stand‑up in improvizacijo.",
+    "style": "Enovrstičnice, absurdi, opazovalni humor.",
+    "youtubeLinks": []
   },
   {
     "name": "Rok",
     "surname": "Škrlep",
-    "imageUrl": "https://rokskrlep.si/wp-content/uploads/2023/11/rok-skrlep.jpg",
-    "quote": "Stand-up comedy: because therapy is expensive, and this way I get paid."
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "Stand-up comedy: because therapy is expensive, and this way I get paid.",
+    "biography": "Rok Škrlep je komik, improvizator in TV‑voditelj, ki pogosto združuje glasbo in humor. Njegove predstave so energične, igrive in pogosto navdihnjene s potovanji in vsakdanjimi situacijami.",
+    "style": "Glasbena komedija, improvizacija, pripovedni humor.",
+    "youtubeLinks": []
   },
   {
     "name": "Žan",
     "surname": "Papič",
-    "imageUrl": "https://zanpapic.si/wp-content/uploads/2023/11/zan-papic-profile.jpg",
-    "quote": "Laughter is contagious, but my jokes are vaccinated against silence."
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "Laughter is contagious, but my jokes are vaccinated against silence.",
+    "biography": "Žan Papič je komik, igralec in voditelj, znan po samoironičnem humorju in podcastu Fejmiči. Njegov slog združuje osebne zgodbe, družbena opažanja in sproščeno prezenco.",
+    "style": "Samoironija, osebne zgodbe, družbena opažanja.",
+    "youtubeLinks": []
   },
   {
     "name": "David",
     "surname": "Gorinšek",
-    "imageUrl": "https://davidgorinsek.si/wp-content/uploads/2023/11/david-gorinsek.jpg",
-    "quote": "Why be serious when you can be hilariously wrong?"
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "Why be serious when you can be hilariously wrong?",
+    "biography": "David Gorinšek je štajerski komik in radijski glas, znan po neposrednem humorju in značilnem štajerskem slogu. Njegovi nastopi pogosto temeljijo na lokalnih zgodbah in osebnih anekdotah.",
+    "style": "Štajerski humor, neposrednost, pripovedni slog.",
+    "youtubeLinks": []
   },
   {
     "name": "Lucija",
     "surname": "Ćirović",
-    "imageUrl": "https://lucijacirovic.com/wp-content/uploads/2023/11/lucija-cirovic-profile.jpg",
-    "quote": "Humor is my superpower, and puns are my kryptonite."
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "Humor is my superpower, and puns are my kryptonite.",
+    "biography": "Lucija Ćirović je igralka, komičarka in ventrilokvistka, ena redkih v Sloveniji. Njeni nastopi združujejo lutkarstvo, karakterne vloge in fizično komedijo, kar jo dela edinstveno na slovenski sceni.",
+    "style": "Karakterni humor, lutkarstvo, fizična komedija.",
+    "youtubeLinks": []
   },
   {
     "name": "Jan",
     "surname": "Kreuzer",
-    "imageUrl": "https://jankreuzer.com/wp-content/uploads/2023/11/jan-kreuzer.jpg",
-    "quote": "Stand-up is like a rollercoaster: thrilling, terrifying, and sometimes you throw up."
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "Stand-up is like a rollercoaster: thrilling, terrifying, and sometimes you throw up.",
+    "biography": "Jan Kreuzer je komik, znan po provokativnem humorju in družbeni kritiki. Njegovi nastopi pogosto izzivajo meje politične korektnosti in raziskujejo temnejše plati vsakdana.",
+    "style": "Črn humor, provokacija, družbena kritika.",
+    "youtubeLinks": []
   },
   {
     "name": "Nejc",
     "surname": "Petek",
-    "imageUrl": "https://scontent-ams4-1.cdninstagram.com/v/t51.2885-19/s320x320/12345678_123456789012345_1234567890_n.jpg?_nc_ht=scontent-ams4-1.cdninstagram.com&_nc_cat=1&_nc_ohc=abc123&_nc_oc=AQabc123&_nc_tp=1",
-    "quote": "If life gives you lemons, make lemonade. If it gives you jokes, make comedy gold."
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "If life gives you lemons, make lemonade. If it gives you jokes, make comedy gold.",
+    "biography": "Nejc Petek je komik in imitator, znan po natančnih posnemanjih slovenskih javnih oseb. Njegov humor temelji na aktualnih temah, satiri in hitrih preobrazbah.",
+    "style": "Imitacije, satira, aktualni humor.",
+    "youtubeLinks": []
   },
   {
     "name": "Nejc",
     "surname": "Šmit",
-    "imageUrl": "https://scontent-ams4-1.cdninstagram.com/v/t51.2885-19/s320x320/87654321_876543210987654_8765432109_n.jpg?_nc_ht=scontent-ams4-1.cdninstagram.com&_nc_cat=1&_nc_ohc=def456&_nc_oc=AQdef456&_nc_tp=1",
-    "quote": "Humor is the art of making people laugh without hurting feelings – too much."
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "Humor is the art of making people laugh without hurting feelings – too much.",
+    "biography": "Nejc Šmit je komik, improvizator in psihoterapevt, ki v humor vključuje psihološke uvide in osebne zgodbe. Njegov slog je topel, iskren in pogosto terapevtsko obarvan.",
+    "style": "Improvizacija, psihološki humor, osebne zgodbe.",
+    "youtubeLinks": []
   },
   {
     "name": "Eva",
     "surname": "Virc",
-    "imageUrl": "https://scontent-ams4-1.cdninstagram.com/v/t51.2885-19/s320x320/11223344_112233445566778_1122334455_n.jpg?_nc_ht=scontent-ams4-1.cdninstagram.com&_nc_cat=1&_nc_ohc=ghi789&_nc_oc=AQghi789&_nc_tp=1",
-    "quote": "Why did the comedian break up with the calendar? Too many dates!"
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "Why did the comedian break up with the calendar? Too many dates!",
+    "biography": "Eva Virc je komičarka mlajše generacije, znana po avtentičnem humorju, ki izhaja iz osebnih izkušenj in mladostnih situacij. Njeni nastopi so sproščeni, neposredni in generacijsko obarvani.",
+    "style": "Osebne zgodbe, mladostni humor, družbena opažanja.",
+    "youtubeLinks": []
   },
   {
     "name": "Tilen",
     "surname": "Artač",
-    "imageUrl": "https://tilenartac.si/wp-content/uploads/2023/11/tilen-artac-profile.jpg",
-    "quote": "Why did the comedian break up with the calendar? Too many dates!"
+    "imageUrl": "https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png",
+    "quote": "Why did the comedian break up with the calendar? Too many dates!",
+    "biography": "Tilen Artač je komik, imitator in glasbenik, najbolj znan kot voditelj oddaje Kaj dogaja?. Njegov humor združuje satirične imitacije, glasbene vložke in aktualne politične komentarje.",
+    "style": "Imitacije, satira, glasbeni humor.",
+    "youtubeLinks": []
   }
 ]

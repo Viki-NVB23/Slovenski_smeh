@@ -2,7 +2,9 @@ package si.uni_lj.fe.tnuv.slovenskismeh;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +21,13 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     private LinearLayout navHome;
     private LinearLayout navEvents;
 
+    private ImageView iconHome;
+    private ImageView iconMap;
+    private ImageView iconEvents;
+    private TextView textHome;
+    private TextView textMap;
+    private TextView textEvents;
+
     private LinearLayout comedianCard1;
     private LinearLayout comedianCard2;
     private LinearLayout comedianCard3;
@@ -32,6 +41,17 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
         navHome = findViewById(R.id.nav_home);
         navEvents = findViewById(R.id.nav_events);
+
+        iconHome = findViewById(R.id.icon_home);
+        iconMap = findViewById(R.id.icon_map);
+        iconEvents = findViewById(R.id.icon_events);
+        textHome = findViewById(R.id.text_home);
+        textMap = findViewById(R.id.text_map);
+        textEvents = findViewById(R.id.text_events);
+
+        // Set map navigation as active (orange)
+        iconMap.setColorFilter(getResources().getColor(android.R.color.holo_orange_dark), android.graphics.PorterDuff.Mode.SRC_IN);
+        textMap.setTextColor(getResources().getColor(android.R.color.holo_orange_dark));
 
         comedianCard1 = findViewById(R.id.comedian_card_1);
         comedianCard2 = findViewById(R.id.comedian_card_2);

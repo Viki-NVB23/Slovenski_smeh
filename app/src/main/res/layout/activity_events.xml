@@ -70,7 +70,8 @@
                 android:id="@+id/icon_home"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
-                android:src="@drawable/ic_icon" />
+                android:src="@drawable/ic_domov"
+                android:tint="#94A3B8" />
 
             <TextView
                 android:id="@+id/text_home"
@@ -94,7 +95,8 @@
                 android:id="@+id/icon_map"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
-                android:src="@drawable/ic_icon" />
+                android:src="@drawable/ic_zemljevid"
+                android:tint="#94A3B8" />
 
             <TextView
                 android:id="@+id/text_map"
@@ -118,7 +120,8 @@
                 android:id="@+id/icon_events"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
-                android:src="@drawable/ic_icon" />
+                android:src="@drawable/ic_dogodek"
+                android:tint="#FF8C00" />
 
             <TextView
                 android:id="@+id/text_events"
