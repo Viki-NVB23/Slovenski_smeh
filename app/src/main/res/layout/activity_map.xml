@@ -31,7 +31,7 @@
                 android:id="@+id/icon_back"
                 android:layout_width="16dp"
                 android:layout_height="16dp"
-                android:src="@drawable/ic_icon" />
+                android:src="@drawable/ic_nazaj" />
         </LinearLayout>
 
         <TextView
@@ -320,10 +320,11 @@
                 android:background="@drawable/bg_rounded"
                 android:padding="12dp">
 
-                <View
+                <ImageView
                     android:id="@+id/img_comedian_1"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
+                    android:scaleType="centerCrop"
                     android:background="#6E7B5A" />
 
                 <LinearLayout
@@ -361,8 +362,7 @@
                     <ImageView
                         android:id="@+id/icon_card_1"
                         android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/ic_icon" />
+                        android:layout_height="20dp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -377,10 +377,11 @@
                 android:background="@drawable/bg_rounded"
                 android:padding="12dp">
 
-                <View
+                <ImageView
                     android:id="@+id/img_comedian_2"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
+                    android:scaleType="centerCrop"
                     android:background="#AA6A6F" />
 
                 <LinearLayout
@@ -418,8 +419,7 @@
                     <ImageView
                         android:id="@+id/icon_card_2"
                         android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/ic_icon" />
+                        android:layout_height="20dp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -434,10 +434,11 @@
                 android:background="@drawable/bg_rounded"
                 android:padding="12dp">
 
-                <View
+                <ImageView
                     android:id="@+id/img_comedian_3"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
+                    android:scaleType="centerCrop"
                     android:background="#8C7E54" />
 
                 <LinearLayout
@@ -475,8 +476,7 @@
                     <ImageView
                         android:id="@+id/icon_card_3"
                         android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/ic_icon" />
+                        android:layout_height="20dp" />
                 </LinearLayout>
             </LinearLayout>
 
