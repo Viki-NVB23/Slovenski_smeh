@@ -38,9 +38,20 @@ public class ComedianAdapter extends RecyclerView.Adapter<ComedianAdapter.Comedi
         holder.nameTextView.setText(comedian.getFullName());
         holder.quoteTextView.setText(comedian.getQuote());
 
-        Glide.with(context)
-                .load(comedian.getImageUrl())
-                .into(holder.imageView);
+        // Load image with placeholder
+        String imageUrl = comedian.getImageUrl();
+        if (imageUrl == null || imageUrl.trim().isEmpty() || imageUrl.trim().equals(" ")) {
+            // Use placeholder if no image URL is provided
+            Glide.with(context)
+                    .load(R.drawable.ic_icon)
+                    .into(holder.imageView);
+        } else {
+            Glide.with(context)
+                    .load(imageUrl)
+                    .placeholder(R.drawable.ic_icon)
+                    .error(R.drawable.ic_icon)
+                    .into(holder.imageView);
+        }
 
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(context, ComedianProfileActivity.class);

@@ -1,106 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#191022">
 
+    <!-- BACK BUTTON HEADER -->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- HEADER IMAGE -->
-        <ImageView
-            android:id="@+id/img_header"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_icon" />
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@drawable/bg_rounded">
 
-        <!-- CONTENT -->
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_nazaj"
+                android:contentDescription="Back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:text="Komik"
+            android:textColor="#FF8C00"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- MAIN CONTENT -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:orientation="vertical">
 
-            <!-- NAME -->
-            <TextView
-                android:id="@+id/txt_comedian_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ime Komika"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <!-- SUBTITLE -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Slovenski komik"
-                android:textColor="#94A3B8"
-                android:textSize="14sp"
-                android:layout_marginTop="4dp" />
-
-            <!-- BIO SECTION -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Biografija"
-                android:textColor="#FF8C00"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:layout_marginTop="24dp" />
-
-            <TextView
-                android:id="@+id/txt_bio"
+            <!-- HEADER IMAGE -->
+            <ImageView
+                android:id="@+id/img_header"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Tukaj pride opis komika..."
-                android:textColor="#FFFFFF"
-                android:textSize="14sp"
-                android:layout_marginTop="8dp" />
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_icon" />
 
-            <!-- STYLE SECTION -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Slog"
-                android:textColor="#FF8C00"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:layout_marginTop="24dp" />
-
-            <TextView
-                android:id="@+id/txt_style"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Stand-up, Humor"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp"
-                android:layout_marginTop="8dp" />
-
-            <!-- MEDIA SECTION -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mediji in posnetki"
-                android:textColor="#FF8C00"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:layout_marginTop="24dp" />
-
+            <!-- CONTENT -->
             <LinearLayout
-                android:id="@+id/layout_media_links"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="8dp">
-                <!-- YouTube links will be added here dynamically -->
+                android:padding="16dp">
+
+                <!-- NAME -->
+                <TextView
+                    android:id="@+id/txt_comedian_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ime Komika"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <!-- SUBTITLE -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slovenski komik"
+                    android:textColor="#94A3B8"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+
+                <!-- BIO SECTION -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biografija"
+                    android:textColor="#FF8C00"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp" />
+
+                <TextView
+                    android:id="@+id/txt_bio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tukaj pride opis komika..."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp" />
+
+                <!-- STYLE SECTION -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slog"
+                    android:textColor="#FF8C00"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp" />
+
+                <TextView
+                    android:id="@+id/txt_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stand-up, Humor"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp" />
+
+                <!-- MEDIA SECTION -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mediji in posnetki"
+                    android:textColor="#FF8C00"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp" />
+
+                <!-- VODORAVNI SEZNAM ZA YOUTUBE KARTICE -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_videos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:clipToPadding="false"
+                    android:paddingEnd="16dp" />
+
+                <LinearLayout
+                    android:id="@+id/layout_media_links"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp">
+                </LinearLayout>
             </LinearLayout>
-
         </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-    </LinearLayout>
-</ScrollView>

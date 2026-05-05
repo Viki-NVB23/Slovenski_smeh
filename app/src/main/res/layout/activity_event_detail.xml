@@ -7,253 +7,102 @@
     android:layout_height="match_parent"
     android:background="#FF191022">
 
-    <!-- Fixed Bottom Action -->
-    <LinearLayout
-        android:id="@+id/fixed_bottom_action"
-        android:orientation="vertical"
-        android:layout_width="390dp"
-        android:layout_height="65dp"
-        android:background="#CC191022"
-        android:paddingLeft="0dp"
-        android:paddingTop="12dp"
-        android:paddingRight="0dp"
-        android:paddingBottom="12dp"
-        tools:ignore="MissingConstraints">
 
-        <LinearLayout
-            android:id="@+id/bottom_nav_container"
-            android:orientation="horizontal"
-            android:layout_width="390dp"
-            android:layout_height="40dp"
-            android:paddingLeft="41dp"
-            android:paddingRight="41dp">
-
-            <!-- Home -->
-            <LinearLayout
-                android:id="@+id/nav_link_home"
-                android:orientation="vertical"
-                android:layout_width="39dp"
-                android:layout_height="38dp">
-
-                <LinearLayout
-                    android:id="@+id/nav_home_icon_container"
-                    android:orientation="vertical"
-                    android:layout_width="16dp"
-                    android:layout_height="18dp">
-
-                    <ImageView
-                        android:id="@+id/nav_home_icon"
-                        android:src="@drawable/ic_icon"
-                        android:scaleType="fitXY"
-                        android:layout_width="16dp"
-                        android:layout_height="18dp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/nav_home_text_container"
-                    android:orientation="vertical"
-                    android:layout_width="39dp"
-                    android:layout_height="16dp">
-
-                    <TextView
-                        android:id="@+id/nav_home_text"
-                        android:text="Domov"
-                        android:textSize="12sp"
-                        android:textColor="#FFFF8C00"
-                        android:fontFamily="Space Grotesk"
-                        android:layout_width="39dp"
-                        android:layout_height="16dp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <!-- Map -->
-            <LinearLayout
-                android:id="@+id/nav_link_map"
-                android:orientation="vertical"
-                android:layout_width="54dp"
-                android:layout_height="38dp">
-
-                <LinearLayout
-                    android:id="@+id/nav_map_icon_container"
-                    android:orientation="vertical"
-                    android:layout_width="18dp"
-                    android:layout_height="18dp">
-
-                    <ImageView
-                        android:id="@+id/nav_map_icon"
-                        android:src="@drawable/ic_icon"
-                        android:scaleType="fitXY"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/nav_map_text_container"
-                    android:orientation="vertical"
-                    android:layout_width="54dp"
-                    android:layout_height="16dp">
-
-                    <TextView
-                        android:id="@+id/nav_map_text"
-                        android:text="Zemljevid"
-                        android:textSize="12sp"
-                        android:textColor="#FF94A3B8"
-                        android:fontFamily="Space Grotesk"
-                        android:layout_width="54dp"
-                        android:layout_height="16dp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <!-- Events -->
-            <LinearLayout
-                android:id="@+id/nav_link_events"
-                android:orientation="vertical"
-                android:layout_width="48dp"
-                android:layout_height="40dp">
-
-                <LinearLayout
-                    android:id="@+id/nav_events_icon_container"
-                    android:orientation="vertical"
-                    android:layout_width="18dp"
-                    android:layout_height="20dp">
-
-                    <ImageView
-                        android:id="@+id/nav_events_icon"
-                        android:src="@drawable/ic_icon"
-                        android:scaleType="fitXY"
-                        android:layout_width="18dp"
-                        android:layout_height="20dp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/nav_events_text_container"
-                    android:orientation="vertical"
-                    android:layout_width="48dp"
-                    android:layout_height="16dp">
-
-                    <TextView
-                        android:id="@+id/nav_events_text"
-                        android:text="Dogodki"
-                        android:textSize="12sp"
-                        android:textColor="#FF94A3B8"
-                        android:fontFamily="Space Grotesk"
-                        android:layout_width="48dp"
-                        android:layout_height="16dp" />
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
 
     <!-- Top Navigation -->
     <LinearLayout
         android:id="@+id/top_navigation"
         android:orientation="horizontal"
-        android:layout_width="390dp"
-        android:layout_height="73dp"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
         android:background="#FF191022"
-        android:padding="16dp"
-        tools:ignore="MissingConstraints">
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <LinearLayout
-            android:id="@+id/top_nav_left_container"
-            android:orientation="horizontal"
-            android:layout_width="48dp"
-            android:layout_height="48dp">
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@drawable/bg_rounded">
 
-            <LinearLayout
-                android:id="@+id/top_nav_left_icon_container"
-                android:orientation="vertical"
+            <ImageView
+                android:id="@+id/top_nav_left_icon"
+                android:src="@drawable/ic_nazaj"
+                android:scaleType="fitXY"
                 android:layout_width="16dp"
-                android:layout_height="16dp">
-
-                <ImageView
-                    android:id="@+id/top_nav_left_icon"
-                    android:src="@drawable/ic_icon"
-                    android:scaleType="fitXY"
-                    android:layout_width="16dp"
-                    android:layout_height="16dp" />
-            </LinearLayout>
+                android:layout_height="16dp" />
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/top_nav_title_container"
-            android:orientation="vertical"
-            android:layout_width="262dp"
-            android:layout_height="23dp">
-
-            <TextView
-                android:id="@+id/top_nav_title"
-                android:text="Dogodek"
-                android:textSize="18sp"
-                android:textColor="#FFF1F5F9"
-                android:textStyle="bold"
-                android:fontFamily="Space Grotesk"
-                android:gravity="center"
-                android:layout_width="129dp"
-                android:layout_height="23dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/top_nav_right_container"
-            android:orientation="horizontal"
-            android:layout_width="48dp"
-            android:layout_height="48dp">
-
-            <LinearLayout
-                android:id="@+id/top_nav_button"
-                android:orientation="horizontal"
-                android:layout_width="18dp"
-                android:layout_height="48dp"
-                android:background="@drawable/bg_rounded">
-
-                <LinearLayout
-                    android:id="@+id/top_nav_button_icon_container"
-                    android:orientation="vertical"
-                    android:layout_width="18dp"
-                    android:layout_height="20dp">
-
-                    <ImageView
-                        android:id="@+id/top_nav_button_icon"
-                        android:src="@drawable/ic_icon"
-                        android:scaleType="fitXY"
-                        android:layout_width="18dp"
-                        android:layout_height="20dp" />
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
+        <TextView
+            android:id="@+id/top_nav_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:text="Dogodek"
+            android:textColor="#FF8C00"
+            android:textSize="22sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
-    <!-- Main Content -->
-    <LinearLayout
-        android:id="@+id/main_content"
-        android:orientation="vertical"
-        android:layout_width="390dp"
-        android:layout_height="1300dp"
-        android:paddingBottom="128dp"
-        tools:ignore="MissingConstraints">
+    <!-- Main Content with ScrollView -->
+    <ScrollView
+        android:id="@+id/main_scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/top_navigation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/main_content"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="20dp">
 
         <!-- Hero Image -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/hero_image"
-            android:layout_width="390dp"
-            android:layout_height="494dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:background="#33FF8C00">
+
+            <ImageView
+                android:id="@+id/event_hero_image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
 
             <LinearLayout
                 android:id="@+id/hero_gradient"
-                android:layout_width="390dp"
-                android:layout_height="494dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:orientation="horizontal"
+                android:background="#99000000"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <!-- Event Title -->
         <LinearLayout
             android:id="@+id/event_title_section"
             android:orientation="vertical"
-            android:layout_width="390dp"
-            android:layout_height="129dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:paddingLeft="16dp"
             android:paddingTop="32dp"
             android:paddingRight="16dp">
@@ -289,7 +138,7 @@
                     android:id="@+id/event_title"
                     android:text="Vid Valič: Stradanje"
                     android:textSize="36sp"
-                    android:textColor="#FFF1F5F9"
+                    android:textColor="#FFFFFF"
                     android:textStyle="bold"
                     android:fontFamily="Space Grotesk"
                     android:layout_width="358dp"
@@ -301,8 +150,8 @@
         <LinearLayout
             android:id="@+id/event_info_grid"
             android:orientation="vertical"
-            android:layout_width="390dp"
-            android:layout_height="158dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:paddingLeft="8dp"
             android:paddingRight="8dp">
 
@@ -323,7 +172,7 @@
 
                     <ImageView
                         android:id="@+id/event_datetime_icon"
-                        android:src="@drawable/ic_icon"
+                        android:src="@drawable/ic_dogodek"
                         android:scaleType="fitXY"
                         android:layout_width="18dp"
                         android:layout_height="20dp" />
@@ -332,27 +181,28 @@
                 <LinearLayout
                     android:id="@+id/event_datetime_text_container"
                     android:orientation="vertical"
-                    android:layout_width="201dp"
-                    android:layout_height="45dp">
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:id="@+id/event_date_text"
                         android:text="Petek, 20. oktober • 20:00"
                         android:textSize="16sp"
-                        android:textColor="#FFF1F5F9"
+                        android:textColor="#FFFFFF"
                         android:textStyle="bold"
                         android:fontFamily="Space Grotesk"
-                        android:layout_width="201dp"
-                        android:layout_height="24dp" />
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
 
                     <TextView
                         android:id="@+id/event_doors_text"
                         android:text="Vrata se odprejo ob 19:30"
                         android:textSize="14sp"
-                        android:textColor="#FF94A3B8"
+                        android:textColor="#94A3B8"
                         android:fontFamily="Space Grotesk"
-                        android:layout_width="171dp"
-                        android:layout_height="21dp" />
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -373,7 +223,7 @@
 
                     <ImageView
                         android:id="@+id/event_venue_icon"
-                        android:src="@drawable/ic_icon"
+                        android:src="@drawable/ic_zemljevid"
                         android:scaleType="fitXY"
                         android:layout_width="16dp"
                         android:layout_height="20dp" />
@@ -382,27 +232,28 @@
                 <LinearLayout
                     android:id="@+id/event_venue_text_container"
                     android:orientation="vertical"
-                    android:layout_width="214dp"
-                    android:layout_height="66dp">
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:id="@+id/event_venue_title"
                         android:text="Kino Šiška"
                         android:textSize="16sp"
-                        android:textColor="#FFF1F5F9"
+                        android:textColor="#FFFFFF"
                         android:textStyle="bold"
                         android:fontFamily="Space Grotesk"
-                        android:layout_width="78dp"
-                        android:layout_height="24dp" />
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
 
                     <TextView
                         android:id="@+id/event_venue_address"
                         android:text="Trg prekomorskih brigad 3, 1000 Ljubljana"
                         android:textSize="14sp"
-                        android:textColor="#FF94A3B8"
+                        android:textColor="#94A3B8"
                         android:fontFamily="Space Grotesk"
-                        android:layout_width="214dp"
-                        android:layout_height="42dp" />
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -411,8 +262,8 @@
         <LinearLayout
             android:id="@+id/event_description_section"
             android:orientation="vertical"
-            android:layout_width="390dp"
-            android:layout_height="231dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:paddingLeft="16dp"
             android:paddingTop="40dp"
             android:paddingRight="16dp">
@@ -421,7 +272,7 @@
                 android:id="@+id/event_description_title"
                 android:text="O dogodku"
                 android:textSize="18sp"
-                android:textColor="#FFF1F5F9"
+                android:textColor="#FF8C00"
                 android:textStyle="bold"
                 android:fontFamily="Space Grotesk"
                 android:layout_width="358dp"
@@ -431,7 +282,7 @@
                 android:id="@+id/event_description_text"
                 android:text="Pridružite se Vidu Valiču v njegovi najnovejši stand-up uspešnici 'Stradanje'. Svež material, oster humor in nepozaben večer smeha v osrčju Ljubljane. Ne zamudite enega najbolj priljubljenih slovenskih komikov v živo."
                 android:textSize="16sp"
-                android:textColor="#FFCBD5E1"
+                android:textColor="#FFFFFF"
                 android:fontFamily="Space Grotesk"
                 android:layout_width="358dp"
                 android:layout_height="130dp" />
@@ -440,19 +291,24 @@
         <!-- Map Placeholder -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/map_placeholder"
-            android:layout_width="358dp"
+            android:layout_width="match_parent"
             android:layout_height="160dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/bg_rounded">
 
             <LinearLayout
                 android:id="@+id/map_overlay"
                 android:orientation="horizontal"
-                android:layout_width="356dp"
-                android:layout_height="158dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:layout_margin="1dp"
                 android:background="#33191022"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
 
                 <LinearLayout
                     android:id="@+id/map_icon_container"
@@ -471,13 +327,14 @@
 
                     <ImageView
                         android:id="@+id/map_icon"
-                        android:src="@drawable/ic_icon"
+                        android:src="@drawable/ic_zemljevid"
                         android:scaleType="fitXY"
                         android:layout_width="16dp"
                         android:layout_height="20dp" />
                 </LinearLayout>
             </LinearLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,6 +9,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.google.gson.Gson;
@@ -20,17 +22,24 @@ import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
+import si.uni_lj.fe.tnuv.slovenskismeh.util.YouTubeUtil;
+
 public class ComedianProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comedian_profile);
 
+        // Back button
+        ImageView btnBack = findViewById(R.id.btn_back);
+        btnBack.setOnClickListener(v -> finish());
+
         ImageView imgHeader = findViewById(R.id.img_header);
         TextView txtComedianName = findViewById(R.id.txt_comedian_name);
         TextView txtBio = findViewById(R.id.txt_bio);
         TextView txtStyle = findViewById(R.id.txt_style);
         LinearLayout layoutMediaLinks = findViewById(R.id.layout_media_links);
+        RecyclerView videosRecyclerView = findViewById(R.id.recycler_videos);
 
         String comedianName = getIntent().getStringExtra("comedian_name");
 
@@ -41,11 +50,19 @@ public class ComedianProfileActivity extends AppCompatActivity {
                 if (selectedComedian != null) {
                     txtComedianName.setText(selectedComedian.getFullName());
 
-                    Glide.with(this)
-                            .load(selectedComedian.getImageUrl())
-                            .placeholder(R.drawable.ic_icon)
-                            .error(R.drawable.ic_icon)
-                            .into(imgHeader);
+                    // Load image with placeholder
+                    String imageUrl = selectedComedian.getImageUrl();
+                    if (imageUrl == null || imageUrl.trim().isEmpty() || imageUrl.trim().equals(" ")) {
+                        Glide.with(this)
+                                .load(R.drawable.ic_icon)
+                                .into(imgHeader);
+                    } else {
+                        Glide.with(this)
+                                .load(imageUrl)
+                                .placeholder(R.drawable.ic_icon)
+                                .error(R.drawable.ic_icon)
+                                .into(imgHeader);
+                    }
 
                     // Set biography (previously used quote)
                     if (selectedComedian.getBiography() != null && !selectedComedian.getBiography().isEmpty()) {
@@ -59,20 +76,19 @@ public class ComedianProfileActivity extends AppCompatActivity {
                         txtStyle.setText(selectedComedian.getStyle());
                     }
 
-                    // Set media links
-                    if (selectedComedian.getYoutubeLinks() != null) {
-                        layoutMediaLinks.removeAllViews();
-                        for (String link : selectedComedian.getYoutubeLinks()) {
-                            TextView linkView = new TextView(this);
-                            linkView.setText(link);
-                            linkView.setTextColor(getResources().getColor(android.R.color.holo_blue_light));
-                            linkView.setPadding(0, 8, 0, 8);
-                            linkView.setOnClickListener(v -> {
-                                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(link));
-                                startActivity(intent);
-                            });
-                            layoutMediaLinks.addView(linkView);
+                    // Display videos in RecyclerView
+                    if (selectedComedian.getYoutubeLinks() != null && !selectedComedian.getYoutubeLinks().isEmpty()) {
+                        List<Video> videos = YouTubeUtil.parseYouTubeLinks(selectedComedian.getYoutubeLinks());
+                        if (!videos.isEmpty()) {
+                            videosRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+                            VideoAdapter videoAdapter = new VideoAdapter(videos, this);
+                            videosRecyclerView.setAdapter(videoAdapter);
+                            videosRecyclerView.setVisibility(View.VISIBLE);
+                        } else {
+                            videosRecyclerView.setVisibility(View.GONE);
                         }
+                    } else {
+                        videosRecyclerView.setVisibility(View.GONE);
                     }
                 }
             }

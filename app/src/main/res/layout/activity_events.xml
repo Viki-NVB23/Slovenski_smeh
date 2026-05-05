@@ -6,6 +6,22 @@
     android:layout_height="match_parent"
     android:background="#191022">
 
+    <!-- CENTER WRAPPER -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- NOTRANJI CONTAINER (390dp kot prej) -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="390dp"
+            android:layout_height="match_parent">
+
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="0dp"
@@ -29,7 +45,7 @@
                 android:id="@+id/icon_back"
                 android:layout_width="16dp"
                 android:layout_height="16dp"
-                android:src="@drawable/ic_icon" />
+                android:src="@drawable/ic_nazaj" />
         </LinearLayout>
 
         <TextView
@@ -37,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Pridi se nasmej"
+            android:text="Pridi in se nasmej"
             android:textColor="#FF8C00"
             android:textSize="22sp"
             android:textStyle="bold" />
@@ -71,7 +87,7 @@
                 android:layout_width="18dp"
                 android:layout_height="18dp"
                 android:src="@drawable/ic_domov"
-                android:tint="#94A3B8" />
+                app:tint="#94A3B8" />
 
             <TextView
                 android:id="@+id/text_home"
@@ -96,7 +112,7 @@
                 android:layout_width="18dp"
                 android:layout_height="18dp"
                 android:src="@drawable/ic_zemljevid"
-                android:tint="#94A3B8" />
+                app:tint="#94A3B8" />
 
             <TextView
                 android:id="@+id/text_map"
@@ -121,7 +137,7 @@
                 android:layout_width="18dp"
                 android:layout_height="18dp"
                 android:src="@drawable/ic_dogodek"
-                android:tint="#FF8C00" />
+                app:tint="#FF8C00" />
 
             <TextView
                 android:id="@+id/text_events"
@@ -165,66 +181,21 @@
                     android:id="@+id/icon_search"
                     android:layout_width="18dp"
                     android:layout_height="18dp"
-                    android:src="@drawable/ic_icon" />
+                    android:src="@drawable/ic_loop" />
 
-                <TextView
-                    android:id="@+id/txt_search_placeholder"
-                    android:layout_width="wrap_content"
+                <EditText
+                    android:id="@+id/edit_search_events"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:layout_marginStart="12dp"
-                    android:text="Išči komične dogodke v Sloveniji..."
                     android:textSize="16sp"
-                    android:textColor="#64748B" />
+                    android:textColor="#64748B"
+                    android:background="@android:color/transparent"
+                    android:hint="Išči komične dogodke v Sloveniji..."
+                    android:textColorHint="#64748B" />
             </LinearLayout>
 
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:scrollbars="none">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/filter_all"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:gravity="center"
-                        android:text="Vsi nastopi"
-                        android:textColor="#FFFFFF"
-                        android:textStyle="bold"
-                        android:background="@drawable/bg_rounded"
-                        android:paddingStart="20dp"
-                        android:paddingEnd="20dp"
-                        android:layout_marginEnd="12dp" />
-
-                    <TextView
-                        android:id="@+id/filter_standup"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:gravity="center"
-                        android:text="Stand-up"
-                        android:textColor="#F1F5F9"
-                        android:background="@drawable/bg_rounded"
-                        android:paddingStart="20dp"
-                        android:paddingEnd="20dp"
-                        android:layout_marginEnd="12dp" />
-
-                    <TextView
-                        android:id="@+id/filter_open_mic"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:gravity="center"
-                        android:text="Open Mic"
-                        android:textColor="#F1F5F9"
-                        android:background="@drawable/bg_rounded"
-                        android:paddingStart="20dp"
-                        android:paddingEnd="20dp" />
-                </LinearLayout>
-            </HorizontalScrollView>
 
             <TextView
                 android:id="@+id/txt_events_title"
@@ -245,6 +216,16 @@
                 android:textSize="16sp"
                 android:layout_marginTop="4dp" />
 
+            <TextView
+                android:id="@+id/txt_no_results_events"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Dogodek pod tem imenom ni bil najden"
+                android:textSize="16sp"
+                android:textColor="#F1F5F9"
+                android:visibility="gone" />
+
             <LinearLayout
                 android:id="@+id/event_card_1"
                 android:layout_width="match_parent"
@@ -254,10 +235,11 @@
                 android:background="@drawable/bg_rounded"
                 android:padding="12dp">
 
-                <View
+                <ImageView
+                    android:id="@+id/event_image_1"
                     android:layout_width="96dp"
                     android:layout_height="96dp"
-                    android:background="#5D6B54" />
+                    android:scaleType="centerCrop" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -301,10 +283,11 @@
                 android:background="@drawable/bg_rounded"
                 android:padding="12dp">
 
-                <View
+                <ImageView
+                    android:id="@+id/event_image_2"
                     android:layout_width="96dp"
                     android:layout_height="96dp"
-                    android:background="#2C3D4F" />
+                    android:scaleType="centerCrop" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -348,10 +331,11 @@
                 android:background="@drawable/bg_rounded"
                 android:padding="12dp">
 
-                <View
+                <ImageView
+                    android:id="@+id/event_image_3"
                     android:layout_width="96dp"
                     android:layout_height="96dp"
-                    android:background="#D8D2C8" />
+                    android:scaleType="centerCrop" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -391,15 +375,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:layout_marginBottom="12dp"
                 android:orientation="horizontal"
                 android:background="@drawable/bg_rounded"
                 android:padding="12dp">
 
-                <View
+                <ImageView
+                    android:id="@+id/event_image_4"
                     android:layout_width="96dp"
                     android:layout_height="96dp"
-                    android:background="#4D3427" />
+                    android:scaleType="centerCrop" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -434,7 +418,106 @@
                 </LinearLayout>
             </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/event_card_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_rounded"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/event_image_5"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Uroš Kuzman: Šolski spomini"
+                        android:textColor="#F1F5F9"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fri, 24 Oct • 19:30"
+                        android:textColor="#94A3B8"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prešeren Theater"
+                        android:textColor="#94A3B8"
+                        android:textSize="14sp"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/event_card_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_rounded"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/event_image_6"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gašper Bergant: Fejmiči"
+                        android:textColor="#F1F5F9"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sun, 25 Oct • 20:00"
+                        android:textColor="#94A3B8"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tivoli Hall"
+                        android:textColor="#94A3B8"
+                        android:textSize="14sp"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

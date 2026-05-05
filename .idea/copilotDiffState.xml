@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="/EventDetailActivity (snapshot).java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="/EventDetailActivity (snapshot).java" />
+              <option name="originalContent" value="package si.uni_lj.fe.tnuv.slovenskismeh;&#10;&#10;import android.os.Bundle;&#10;import androidx.appcompat.app.AppCompatActivity;&#10;&#10;public class EventDetailActivity extends AppCompatActivity {&#10;    @Override&#10;    protected void onCreate(Bundle savedInstanceState) {&#10;        super.onCreate(savedInstanceState);&#10;        setContentView(R.layout.activity_event_detail);&#10;    }&#10;}" />
+              <option name="updatedContent" value="package si.uni_lj.fe.tnuv.slovenskismeh;&#13;&#10;&#13;&#10;import android.os.Bundle;&#13;&#10;import android.widget.LinearLayout;&#13;&#10;import androidx.appcompat.app.AppCompatActivity;&#13;&#10;&#13;&#10;public class EventDetailActivity extends AppCompatActivity {&#13;&#10;    @Override&#13;&#10;    protected void onCreate(Bundle savedInstanceState) {&#13;&#10;        super.onCreate(savedInstanceState);&#13;&#10;        setContentView(R.layout.activity_event_detail);&#13;&#10;&#13;&#10;        // Back button&#13;&#10;        LinearLayout btnBack = findViewById(R.id.top_nav_left_icon_container);&#13;&#10;        if (btnBack != null) {&#13;&#10;            btnBack.setOnClickListener(v -&gt; finish());&#13;&#10;        }&#13;&#10;    }&#13;&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

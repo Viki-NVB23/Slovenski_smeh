@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.bumptech.glide.Glide;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -39,6 +40,10 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
 
+        // Back button
+        LinearLayout btnBack = findViewById(R.id.btn_back);
+        btnBack.setOnClickListener(v -> finish());
+
         navHome = findViewById(R.id.nav_home);
         navEvents = findViewById(R.id.nav_events);
 
@@ -56,6 +61,29 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         comedianCard1 = findViewById(R.id.comedian_card_1);
         comedianCard2 = findViewById(R.id.comedian_card_2);
         comedianCard3 = findViewById(R.id.comedian_card_3);
+
+        // Load comedian images
+        ImageView imgComedian1 = findViewById(R.id.img_comedian_1);
+        ImageView imgComedian2 = findViewById(R.id.img_comedian_2);
+        ImageView imgComedian3 = findViewById(R.id.img_comedian_3);
+
+        // Vid Valič
+        Glide.with(this)
+                .load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2uGG0ympfwwIFoOF0Z6_eBBL7F-WQi04rZg&s")
+                .centerCrop()
+                .into(imgComedian1);
+
+        // Martina Ipša
+        Glide.with(this)
+                .load("https://govorise.metropolitan.si/media/cache/upload/Photo/2014/02/19/s08_18_ipsa_xxx_i988x656.jpg")
+                .centerCrop()
+                .into(imgComedian2);
+
+        // Perica Jerković
+        Glide.with(this)
+                .load("https://www.metropolitan.si/media/cache/upload/Photo/2024/12/09/perica-jerkovic_biggalleryimage.png")
+                .centerCrop()
+                .into(imgComedian3);
 
         navHome.setOnClickListener(v -> {
             Intent intent = new Intent(MapActivity.this, MainActivity.class);
